@@ -34,7 +34,7 @@ void client_register(const std::string& ip, const std::string& port) {
 
 int main() {
   std::cout<<"start.\n";
-  std::string section_test = "test";
+  std::string section_test = "test";;
   std::string client_num = "client_num";
   std::string thread_num = "thread_num";// because client_register block,so this key has no practical use
   getConfig(section_test,client_num,thread_num);
