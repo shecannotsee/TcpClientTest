@@ -30,11 +30,11 @@ client_socket_id clientConnect(std::string ip,std::string port) {
 part_connect:
   // 连接服务器
   int connect_result = connect(client_socket_id, (struct  sockaddr*)&serverAddr, sizeof(serverAddr));
-  if (connect_result>=0)
-    std::cout<<"connect server success.\n";
+  if (connect_result==0) {
+    std::cout << "connect server success.\n";
+  }
   else {
     std::cout << "connect server failed.\n";
-    sleep(5);
     goto part_connect;
   }
   return client_socket_id;
