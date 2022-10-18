@@ -18,11 +18,13 @@ void client_register(const std::string& ip, const std::string& port) {
   int client_socket_id = clientConnect(ip,port);
   std::this_thread::yield();
 
-  bool sendMessage = false;
+  bool sendMessage = true;
   while (sendMessage) {
     std::string message = "{a};";
+    std::cout<<"input:...\n";
+    std::cin>>message;
     if (message != "stop") {
-      sleep(10);
+      sleep(0);
       send(client_socket_id, message.c_str(), message.size(), 0);
       std::cout <<"," <<++event_num<<",";
     }
