@@ -1,0 +1,6 @@
+[submodule "3rd/sheThreadPool"]
+	path = 3rd/sheThreadPool
+	url = https://github.com/shecannotsee/sheThreadPool.git
+[submodule "3rd/sheIni"]
+	path = 3rd/sheIni
+	url = https://github.com/shecannotsee/sheIni.git
