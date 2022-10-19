@@ -3,9 +3,9 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(PROJECT_NAME "tcp_client_test")
 ###################################################
-set(libraries_dir "${CMAKE_SOURCE_DIR}/libraries")
-set(sheIni "${libraries_dir}/sheIni")
-set(sheThreadPool "${libraries_dir}/sheThreadPool")
+set(3rd "${CMAKE_SOURCE_DIR}/3rd")
+set(sheIni "${3rd}/sheIni")
+set(sheThreadPool "${3rd}/sheThreadPool")
 ###################################################
 set(CMAKE_CXX_FLAGS "-g")# 断点无效处理方案
 project(${PROJECT_NAME})
